@@ -5,10 +5,12 @@ const person = {
   age: 80,
 };
 let team = players;
-let team1 = JSON.prase(JSON.stringify(players));
+let team1 = [];
+for (let i=0; i<players.length; i++){
+	team1[i] = players[i];
+}
 
-let cap1 = JSON.prase(JSON.stringify(person))
-
+let cap1 = JSON.parse(JSON.stringify(person))
 
 // Write your code here, make sure the name of variables is exactly same as mentioned in the problem statement
 
